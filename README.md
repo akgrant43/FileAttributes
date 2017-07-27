@@ -9,7 +9,7 @@ Metacello new
 	repository: 'github://akgrant43/FileAttributes/src';
 	baseline: 'FileAttributes';
 	load.
-DiskFileAttributes initializeWithPrimitives: FileAttributesPluginPrims new.
+#DiskFileAttributes asClass initializeWithPrimitives: #FileAttributesPluginPrims asClass new.
 ```
 
 Note: The DiskFileAttributes initialization will be automatically performed once the code has been integrated in to the core system.
