@@ -1,0 +1,4 @@
+errors
+getAttributesFailed
+
+	^-4

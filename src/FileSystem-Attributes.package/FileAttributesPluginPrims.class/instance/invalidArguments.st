@@ -1,0 +1,4 @@
+errors
+invalidArguments
+
+	^-6

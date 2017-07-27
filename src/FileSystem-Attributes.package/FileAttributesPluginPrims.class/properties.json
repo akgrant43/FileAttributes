@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "AlistairGrant 5/14/2017 21:26",
+	"super" : "Object",
+	"category" : "FileSystem-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Encoder",
+		"S_IFBLK",
+		"S_IFCHR",
+		"S_IFDIR",
+		"S_IFIFO",
+		"S_IFLNK",
+		"S_IFMT",
+		"S_IFREG",
+		"S_IFSOCK"
+	],
+	"instvars" : [ ],
+	"name" : "FileAttributesPluginPrims",
+	"type" : "normal"
+}

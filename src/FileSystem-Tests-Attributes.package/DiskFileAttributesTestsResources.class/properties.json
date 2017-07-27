@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestResource",
+	"category" : "FileSystem-Tests-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"file",
+		"beforeCreationTime",
+		"afterCreationTime"
+	],
+	"name" : "DiskFileAttributesTestsResources",
+	"type" : "normal"
+}

@@ -1,0 +1,4 @@
+errors
+cantAllocateMemory
+
+	^-10

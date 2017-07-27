@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "FileSystem-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"store",
+		"path"
+	],
+	"name" : "FileAttributes",
+	"type" : "normal"
+}

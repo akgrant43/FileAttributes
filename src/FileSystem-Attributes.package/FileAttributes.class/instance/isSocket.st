@@ -1,0 +1,4 @@
+testing
+isSocket
+
+	^false

@@ -1,0 +1,4 @@
+testing
+isFIFO
+
+	^false

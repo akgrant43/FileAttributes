@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FileAttributesPluginPrims",
+	"category" : "FileSystem-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WindowsFileAttributesPluginPrims",
+	"type" : "normal"
+}

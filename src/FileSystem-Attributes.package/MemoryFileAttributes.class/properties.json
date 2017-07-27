@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FileAttributes",
+	"category" : "FileSystem-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MemoryFileAttributes",
+	"type" : "normal"
+}

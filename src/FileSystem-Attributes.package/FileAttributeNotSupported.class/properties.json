@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "AlistairGrant 5/1/2017 17:04",
+	"super" : "FileSystemError",
+	"category" : "FileSystem-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FileAttributeNotSupported",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "AlistairGrant 4/27/2017 23:05",
+	"super" : "TestCase",
+	"category" : "FileSystem-Tests-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"primitives",
+		"temporaryFile"
+	],
+	"name" : "DiskFileAttributeTests",
+	"type" : "normal"
+}

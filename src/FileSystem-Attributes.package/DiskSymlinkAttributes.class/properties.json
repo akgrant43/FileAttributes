@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DiskFileAttributes",
+	"category" : "FileSystem-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DiskSymlinkAttributes",
+	"type" : "normal"
+}
