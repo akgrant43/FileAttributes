@@ -2,6 +2,10 @@
 
 This repository contains the Pharo Smalltalk code to support and integrate the FileAttributesPlugin.
 
+Integration in to Pharo is being tracked in the following issues:
+
+- https://pharo.fogbugz.com/f/cases/18279/isSymlink-seems-to-be-broken-on-Linux
+
 Assuming you have a Pharo VM with the FileAttributesPlugin available, to load the code:
 
 ```smalltalk
