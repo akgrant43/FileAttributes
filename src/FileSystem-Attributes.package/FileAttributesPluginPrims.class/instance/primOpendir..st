@@ -1,4 +1,4 @@
-akg dev
+primitives
 primOpendir: pathString
 	"Answer an ExternalAddress for a directory stream on pathString, or nil if
 	the directory cannot be opened"
@@ -7,5 +7,5 @@ primOpendir: pathString
 	"self primOpendir: '.'"
 	"self primOpendir: '/no/such/directory'"
 
-	<primitive: 'primitiveOpendir' module: 'FileAttributesPlugin'>
+	<primitive: 'primitiveOpendir' module: 'FileAttributesPlugin' error: error>
 	^self primitiveFailed

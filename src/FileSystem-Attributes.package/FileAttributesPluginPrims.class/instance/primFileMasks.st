@@ -13,5 +13,5 @@ primFileMasks
 
 	For more information, see: http://man7.org/linux/man-pages/man2/stat.2.html
 	"
-	<primitive: 'primitiveFileMasks' module: 'FileAttributesPlugin'>
+	<primitive: 'primitiveFileMasks' module: 'FileAttributesPlugin' error: error>
 	^self primitiveFailed

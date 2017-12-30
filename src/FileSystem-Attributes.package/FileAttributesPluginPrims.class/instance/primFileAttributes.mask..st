@@ -28,5 +28,8 @@ access() information
 	2: is writeable
 	3: is executable
 	"
-	<primitive: 'primitiveFileAttributes' module: 'FileAttributesPlugin'>
-	^self primitiveFailed
+	<primitive: 'primitiveFileAttributes' module: 'FileAttributesPlugin' error: error>
+	^error isPrimitiveOSError ifTrue:
+		[ self signalError: error errorCode for: aString ]
+	ifFalse: 
+		[ self primitiveFailed ]

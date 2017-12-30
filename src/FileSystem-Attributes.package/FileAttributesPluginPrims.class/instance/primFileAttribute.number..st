@@ -24,5 +24,12 @@ access() information
 	14: is writeable
 	15: is executable
 	"
-	<primitive: 'primitiveFileAttribute' module: 'FileAttributesPlugin'>
-	^self primitiveFailed
+	<primitive: 'primitiveFileAttribute' module: 'FileAttributesPlugin' error: error>
+	^error isPrimitiveOSError ifTrue: [ 
+		(error errorCode = self cantStatPath and: [ attributeNumber ~= 16 ]) ifTrue: 
+			[ (self fileAttributeNumberMap at: attributeNumber) value: 
+				(DiskSymlinkAttributes store: DiskStore currentFileSystem store path: aString asPath) ]
+		ifFalse:
+			[ self signalError: error errorCode for: aString ] ]
+	ifFalse:
+		[ self primitiveFailed ]

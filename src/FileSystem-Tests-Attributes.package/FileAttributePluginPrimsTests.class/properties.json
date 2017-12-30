@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "AlistairGrant 12/25/2017 17:03",
+	"super" : "TestCase",
+	"category" : "FileSystem-Tests-Attributes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"primitives"
+	],
+	"name" : "FileAttributePluginPrimsTests",
+	"type" : "normal"
+}

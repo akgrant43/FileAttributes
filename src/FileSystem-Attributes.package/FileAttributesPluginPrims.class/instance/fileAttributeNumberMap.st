@@ -18,4 +18,5 @@ fileAttributeNumberMap
 		#isReadable
 		#isWritable
 		#isExecutable
+		#isSymlink
 		)

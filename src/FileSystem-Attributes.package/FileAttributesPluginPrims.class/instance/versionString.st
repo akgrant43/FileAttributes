@@ -1,5 +1,5 @@
-accessing
+versions
 versionString
 
-	<primitive: 'primitiveVersionString' module: 'FileAttributesPlugin'>
+	<primitive: 'primitiveVersionString' module: 'FileAttributesPlugin' error: error>
 	^self primitiveFailed
