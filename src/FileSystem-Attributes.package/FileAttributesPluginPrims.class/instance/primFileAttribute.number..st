@@ -23,6 +23,10 @@ access() information
 	13: is readable
 	14: is writeable
 	15: is executable
+
+symbolic link information
+
+	16: is symbolic link
 	"
 	<primitive: 'primitiveFileAttribute' module: 'FileAttributesPlugin' error: error>
 	^error isPrimitiveOSError ifTrue: [ 

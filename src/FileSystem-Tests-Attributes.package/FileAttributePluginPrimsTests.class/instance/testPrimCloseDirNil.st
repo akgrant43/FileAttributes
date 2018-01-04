@@ -6,5 +6,4 @@ testPrimCloseDirNil
 		should: [ primitives primClosedir: nil ]
 		raise: PrimitiveFailed
 		withExceptionDo: [ :exception | 
-			self assert: exception selector equals: #primClosedir:.
-			self assert: exception additionalInformation isNil ].
+			self assert: exception selector equals: #primClosedir: ].

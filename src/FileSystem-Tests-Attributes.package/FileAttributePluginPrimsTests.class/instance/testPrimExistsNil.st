@@ -6,5 +6,4 @@ testPrimExistsNil
 		should: [ primitives primExists: nil ]
 		raise: PrimitiveFailed
 		withExceptionDo: [ :exception | 
-			self assert: exception selector equals: #primExists:.
-			self assert: exception additionalInformation isNil ].
+			self assert: exception selector equals: #primExists: ].
