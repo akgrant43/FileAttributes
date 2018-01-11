@@ -8,6 +8,6 @@
 	"instvars" : [
 		"primitives"
 	],
-	"name" : "FileAttributePluginPrimsTests",
+	"name" : "FileAttributesPluginPrimsTests",
 	"type" : "normal"
 }
