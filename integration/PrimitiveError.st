@@ -53,3 +53,7 @@ errorName: aSymbol
 errorCode: anInteger
 	
 	errorCode := anInteger! !
+
+!Object methodsFor: '*System-Support-error handling' stamp: 'eem 12/12/2017 09:16'!
+isPrimitiveError
+	^false! !
