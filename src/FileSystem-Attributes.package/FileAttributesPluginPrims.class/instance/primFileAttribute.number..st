@@ -29,7 +29,7 @@ symbolic link information
 	16: is symbolic link
 	"
 	<primitive: 'primitiveFileAttribute' module: 'FileAttributesPlugin' error: error>
-	^error isPrimitiveOSError ifTrue: [ 
+	^error isPrimitiveError ifTrue: [ 
 		(error errorCode = self cantStatPath and: [ attributeNumber ~= 16 ]) ifTrue: 
 			[ (self fileAttributeNumberMap at: attributeNumber) value: 
 				(DiskSymlinkAttributes store: DiskStore currentFileSystem store path: aString asPath) ]
