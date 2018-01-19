@@ -9,11 +9,18 @@ Integration in to Pharo is being tracked in the following issues:
 Assuming you have a Pharo VM with the FileAttributesPlugin available, to load the code:
 
 ```smalltalk
+| prims |
+
 Metacello new
 	repository: 'github://akgrant43/FileAttributes/src';
 	baseline: 'FileAttributes';
 	load.
-#DiskFileAttributes asClass initializeWithPrimitives: #FileAttributesPluginPrims asClass new.
+"The clunky initialisation code below is only for intermediate testing, 
+and not required once the integration has been completed."
+OSPlatform current isWindows 
+	ifTrue: [prims := #WindowsFileAttributesPluginPrims asClass new]
+	ifFalse: [prims := #UnixFileAttributesPluginPrims asClass new].
+#DiskFileAttributes asClass initializeWithPrimitives: prims.
 ```
 
 Note: The DiskFileAttributes initialization will be automatically performed once the code has been integrated in to the core system.
@@ -36,11 +43,11 @@ Once the core classes have been installed (but before integration), it is possib
 
 A number of tests will fail:
 
-- FileHandleTest(FileSystemHandleTest)>>#testTruncate is an existing problem
 - FileReferenceAttributeTests related failures are due to the lack of integration methods (which will be added next).
+- FileHandleTest(FileSystemHandleTest)>>#testTruncate is an existing problem (fixed in Pharo 7).
 - On Pharo 6.1 you may see FileLocatorTest>>#testMoveTo also fail (fixed in Pharo 7).
 
-If you see additional failures, run the test in a clean image and compare to that baseline.
+If you see additional failures, run the tests in a clean image and compare to that baseline.
 
 If you see only these failures, everything is good so far.
 
@@ -66,5 +73,5 @@ ChangeSet fileIntoNewChangeSet: fpi asFileReference asAbsolute fullName.
 DiskStore current class useFilePlugin.
 ```
 
-Re-running test runner as described above should have a single failure, FileHandleTest(FileSystemHandleTest)>>#testTruncate.
+Re-running the test runner as described above should result in zero failures (ignoring #testTruncate and #testMoveTo (existing issues)).
 
