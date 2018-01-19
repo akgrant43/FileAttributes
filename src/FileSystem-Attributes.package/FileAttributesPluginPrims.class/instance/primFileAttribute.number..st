@@ -1,7 +1,7 @@
 primitives
 primFileAttribute: aString number: attributeNumber
 	"Answer a single attribute for the supplied file.
-	On error, answer a single element array containining the error code.
+	For backward compatibility (on Unix) with FileReference if the file doesn't exist, and the specified path is a (broken) symbolic link, answer the requested attribute for the symbolic link.
 
 stat() information:
 	
