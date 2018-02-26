@@ -1,3 +1,15 @@
+# SUPERSEEDED
+
+This code in this repository has been superseeded by:
+
+https://github.com/akgrant43/pharo/tree/21368-Integrate-FileAttributesPlugin
+
+See also: https://pharo.fogbugz.com/f/cases/21368/Integrate-FileAttributesPlugin
+
+
+
+
+
 # FileAttributes
 
 This repository contains the Pharo Smalltalk code to support and integrate the FileAttributesPlugin.
